@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Application.Repositiory
 {
-    internal class ClickUpRepo : ICLickUpService
+    internal class ClickUpRepo : IClickUpService
     {
         private readonly HttpClient _httpClient;
         public ClickUpRepo(HttpClient httpClient)
@@ -33,5 +33,6 @@ namespace Application.Repositiory
                 return null;
         }       
     }
+
 }
  

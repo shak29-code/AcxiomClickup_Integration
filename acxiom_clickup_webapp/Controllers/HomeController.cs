@@ -6,12 +6,16 @@ using Application.Services;
 namespace acxiom_clickup_webapp.Controllers;
 public class HomeController : Controller
 {
+    private readonly IClickUpService _clickUpService;
 
-
+    public HomeController(IClickUpService clickUpService)
+    {
+        _clickUpService = clickUpService;
+    }
     [Authorize]
     public async Task<IActionResult> Index()
     {
-
+        _clickUpService.GetTeamID("", "");
         return View();
     }
 
