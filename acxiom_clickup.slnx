@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="acxiom_clickup_webapp/acxiom_clickup_webapp.csproj" />
+  <Project Path="Application/Application.csproj" />
+</Solution>

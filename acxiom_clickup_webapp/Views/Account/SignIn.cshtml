@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Sign in";
+}
+
+<div class="container mt-5">
+    <h2>Sign in</h2>
+    <p>Please sign in to continue.</p>
+    <form asp-controller="Account" asp-action="SignInChallenge" method="post">
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-primary">Sign in with Azure AD</button>
+    </form>
+</div>
