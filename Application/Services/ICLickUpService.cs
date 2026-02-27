@@ -2,7 +2,7 @@
 
 namespace Application.Services
 {
-    public interface IClickUpService
+    internal interface IClickUpService
     {
         Task<string> GetTeamID(string emailID, string action);
     }
